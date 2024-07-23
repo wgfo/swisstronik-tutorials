@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+/// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.19;
 
 //This contract is only intended for testing purposes
@@ -8,7 +8,7 @@ contract Swisstronik {
 
     /**
      * @dev Constructor is used to set the initial message for the contract
-     * @param _message: The message to be associated to the message variable
+     * @param _message the message to associate with the message variable.
      */
     constructor(string memory _message) payable{
         message = _message;
@@ -16,7 +16,7 @@ contract Swisstronik {
 
     /**
      * @dev setMessage() updates the stored message in the contract
-     * @param _message The new message to replace the existing one
+     * @param _message the new message to replace the existing one
      */
     function setMessage(string memory _message) public {
         message = _message;
